@@ -1,0 +1,29 @@
+# Cau hinh web, dung mot trong hai cach
+
+server:
+ port: 8080
+ servlet:
+  context-path: /
+  
+# Co cau hinh bien env voi ten bat ky
+# Cach doc du lieu nay o file HelloController
+database:
+ name: MySql
+ location: mysql/database/student
+ key: NHX-123N-XS2
+ 
+ 
+# Cau hinh JDBC MySql
+spring:
+ datasource:
+  username: root
+  password: Kensakuai123
+  url: jdbc:mysql://localhost:3306/studentmanagement
+ jpa:
+  hibernate:
+   ddl-auto: update
+  show-sql: true
+  properties:
+   hibernate:
+    dialect: org.hibernate.dialect.MySQL8Dialect
+    format_sql: true

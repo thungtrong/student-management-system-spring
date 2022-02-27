@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>Persons View</h1>
+	
+	<div>
+		<h3 th:text=${persons.get(0).getId()}></h3>
+		<h3 th:text=${persons.get(0).getFirstName()}></h3>
+		<h3 th:text=${persons.get(0).getLastName()}></h3>
+	</div>
+</body>
+</html>
